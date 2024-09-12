@@ -3,6 +3,8 @@
 // Skicka props emellan eller det kanske inte behövs, ju för 
 // de "tomma" datan så behövs props
 
+// Hur kan jag göra koden bättre
+
 
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -14,10 +16,12 @@ import {
   selectWeatherError,
 } from './weatherSelectors';
 
-// Fixa filter states för temperatur, nederbörd och vindstyrka t.ex.
+// Fixa filter - states för temperatur, nederbörd och vindstyrka t.ex.
 
 const WeatherApp = () => {
   const [city, setCity] = useState('');
+// const [filter, setFilter] = useState();
+
   const dispatch = useDispatch();
 
   const currentWeather = useSelector(selectCurrentWeather);

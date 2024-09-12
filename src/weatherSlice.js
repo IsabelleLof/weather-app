@@ -6,8 +6,10 @@ import axios from 'axios';
 // Du kan nu använda process.env.REACT_APP_API_KEY i din kod för 
 // att få tillgång till din API-nyckel:
 
-const API_KEY = process.env.REACT_APP_API_KEY; // Hämta API key:n från miljövaribaln
+const API_KEY = 'SECRET'; // Hämta API key:n från miljövaribaln
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
+
+console.log(BASE_URL);
 
 // Api som jag ska använda
 
